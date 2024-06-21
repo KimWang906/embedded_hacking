@@ -1,0 +1,12 @@
+version: '3'
+services:
+ hardware_analysis:
+    restart: always
+    build:
+      context: .
+      dockerfile: Dockerfile
+    volumes:
+      - ./:/root/hardware_analysis
+      - "/dev:/dev"
+    privileged: true
+    container_name: hardware_analysis
