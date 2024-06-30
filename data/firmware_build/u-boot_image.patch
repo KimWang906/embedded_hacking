@@ -1,0 +1,11 @@
+--- u-boot-2010.03/common/image.c	2010-03-31 21:54:39.000000000 +0000
++++ u-boot-2010.03_patch/common/image.c	2024-06-24 08:33:48.525271953 +0000
+@@ -941,7 +941,7 @@
+ 			return 1;
+ 		}
+ 
+-#if defined(CONFIG_B2) || defined(CONFIG_EVB4510) || defined(CONFIG_ARMADILLO)
++#if defined(CONFIG_B2) || defined(CONFIG_EVB4510) || defined(CONFIG_ARMADILLO) || defined(CONFIG_VERSATILE)
+ 		/*
+ 		 * We need to copy the ramdisk to SRAM to let Linux boot
+ 		 */

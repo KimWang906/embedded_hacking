@@ -1,0 +1,11 @@
+#!/bin/sh
+mount -t proc /proc /proc
+echo 1 >> /proc/sys/net/ipv4/ip_forward
+
+# /sbin/inittime
+busybox ifconfig eth0 10.0.2.15 netmask 255.255.255.0
+busybox route add default gw 10.0.2.2
+# Start Web Service
+/sbin/httpd
+# Execute shell
+busybox sh

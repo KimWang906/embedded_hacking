@@ -1,0 +1,1 @@
+/cgibin/m.cgi

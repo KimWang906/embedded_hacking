@@ -1,2 +1,7 @@
 *.extracted/
 system
+.buildroot-ccache
+buildroot-2015.11.1
+.wget-hsts
+src
+__pycache__

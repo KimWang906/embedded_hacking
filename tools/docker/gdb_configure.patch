@@ -1,0 +1,11 @@
+diff -uNr a/gdb/configure b/gdb/configure
+--- a/gdb/configure	2008-01-13 21:23:04.000000000 +0900
++++ b/gdb/configure	2024-06-26 08:46:38.648859600 +0900
+@@ -6287,6 +6287,7 @@
+ esac
+ 
+ # These are the libraries checked by Readline.
++ac_cv_search_tgetent="/root/libtermcap.a"
+ echo "$as_me:$LINENO: checking for library containing tgetent" >&5
+ echo $ECHO_N "checking for library containing tgetent... $ECHO_C" >&6
+ if test "${ac_cv_search_tgetent+set}" = set; then

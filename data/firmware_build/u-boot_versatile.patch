@@ -1,0 +1,13 @@
+--- u-boot-2010.03/include/configs/versatile.h	2010-03-31 21:54:39.000000000 +0000
++++ u-boot-2010.03_patch/include/configs/versatile.h	2024-06-24 08:25:51.865095234 +0000
+@@ -124,8 +124,8 @@
+ #define CONFIG_BOOTP_SUBNETMASK
+ 
+ #define CONFIG_BOOTDELAY	2
+-#define CONFIG_BOOTARGS		"root=/dev/nfs mem=128M ip=dhcp "\
+-				"netdev=25,0,0xf1010000,0xf1010010,eth0"
++#define CONFIG_BOOTARGS		"root=/dev/ram mem=128M console=ttyAMA0,115200"
++#define CONFIG_INITRD_TAG 	1
+ 
+ /*
+  * Static configuration when assigning fixed address
